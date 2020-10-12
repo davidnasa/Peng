@@ -1,0 +1,15 @@
+So first things first we need a name for the app.
+-> Peng.
+
+Front End:
+  -Login Page
+  -Home Page
+    -Questions at the top.(with the answers linked under)
+    -Unanswered questions tab.
+    -Search bar to search for users.
+    -Posts(Pics, text, etc.)
+  -Users Pages
+    -Accessed by clicking on a user's block(profile picture or username) over question/post or searched.
+    -Includes profile picture, username, biography/description, and past posts/questions.
+
+KAZIIIIIIIM HELPPPPPPP
