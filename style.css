@@ -1,0 +1,38 @@
+img.logo {    /* alligning logo to the center */
+    padding: 4px;
+    margin: auto;
+    display: block;
+    width: 8%;
+}
+
+.navigations {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li.navigations {
+    float: left;
+}
+li.navigations a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.navigations:link {
+    text-decoration: none;
+    color: deeppink;
+}
+ul.navigations:visited {
+    color: black;
+}
+ul.navigations:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+ul.navigations:active {
+    color: darkcyan;
+}
