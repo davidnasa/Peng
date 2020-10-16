@@ -5,17 +5,20 @@ html {
   margin: 0px;
 }
 img.logo {    /* alligning logo to the center */
-    padding: 4px;
     margin: auto;
     display: table;
     width: 8%;
+    min-width: 137.52px;
+    min-height: 41.44px;
     float: left;
     vertical-align: middle;
-    padding: 15px;
+    padding: 1%;
+    resize: both;
 }
 .header {
   display: table-cell;
   vertical-align: center;
+  resize: inherit;
 }
 ul.menu {
     list-style-type: none;
@@ -24,42 +27,84 @@ ul.menu {
     text-align: right;
     vertical-align: middle;
 }
-ul.menu li {
+ul.menu li {                  /* The list items */
     display: inline;
     padding: 1%;
     font-size: 110%;
     text-decoration: none;
-    color: gray;
     font-family: sans-serif;
-    white-space: nowrap;
     vertical-align: middle;
+    color: white;
 }
 .circle {
   border-color: white;
   border-radius: 50%;
-  border: solid 2px;
+  border: solid 1px;
   min-width: 40px;
   height: 40px;
   display: inline-block;
   vertical-align: middle;
 }
+a:visited {
+  color: white;
+}
 a:link {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 a:hover {
-  color: hotpink;
-  text-decoration: underline;
-}
-a:visited {
-  color: white;
+  color: deeppink;
 }
 a:active {
   color: aqua;
 }
 .line {
   width: 1440px;
-  height: 47px;
+  height: 0px;
   border-top: 2px solid rgb(58, 58, 58);
   position: absolute;
+}
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+  background: cyan;
+  color: #212121;
+
+}
+.search-box {
+  position: absolute;
+  left: 25%;
+  top: 34px;
+  vertical-align: inherit;
+  transform: translate(-50%, -50%);
+  background: #6F1E51;
+  height: 30px;
+  border-radius: 30px;
+  padding: 10px;
+}
+.search-btn {
+  color: #212121;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6F1E51;
+  transition: 0.4s;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0%;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0px;
 }
