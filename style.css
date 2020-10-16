@@ -1,38 +1,65 @@
+html {
+  background-color: #212121;
+}
+.body {
+  margin: 0px;
+}
 img.logo {    /* alligning logo to the center */
     padding: 4px;
     margin: auto;
-    display: block;
+    display: table;
     width: 8%;
-}
-
-.navigations {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li.navigations {
     float: left;
+    vertical-align: middle;
+    padding: 15px;
 }
-li.navigations a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
+.header {
+  display: table-cell;
+  vertical-align: center;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0%;
+    padding: 11px;
+    text-align: right;
+    vertical-align: middle;
+}
+ul.menu li {
+    display: inline;
+    padding: 1%;
+    font-size: 110%;
     text-decoration: none;
+    color: gray;
+    font-family: sans-serif;
+    white-space: nowrap;
+    vertical-align: middle;
 }
-
-li.navigations:link {
-    text-decoration: none;
-    color: deeppink;
+.circle {
+  border-color: white;
+  border-radius: 50%;
+  border: solid 2px;
+  min-width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
 }
-ul.navigations:visited {
-    color: black;
+a:link {
+  color: grey;
+  text-decoration: none;
 }
-ul.navigations:hover {
-    color: deepskyblue;
-    text-decoration: underline;
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
 }
-ul.navigations:active {
-    color: darkcyan;
+a:visited {
+  color: white;
+}
+a:active {
+  color: aqua;
+}
+.line {
+  width: 1440px;
+  height: 47px;
+  border-top: 2px solid rgb(58, 58, 58);
+  position: absolute;
 }
