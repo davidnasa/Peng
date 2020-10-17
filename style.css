@@ -4,7 +4,7 @@ html {
 .body {
   margin: 0px;
 }
-img.logo {    /* alligning logo to the center */
+img.logo {                 /* alligning logo to the center */
     margin: auto;
     display: table;
     width: 8%;
