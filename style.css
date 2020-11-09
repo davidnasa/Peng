@@ -23,7 +23,7 @@ img.logo {                 /* alligning logo to the center */
 ul.menu {
     list-style-type: none;
     margin: 0%;
-    padding: 11px;
+    padding: 15px;
     text-align: right;
     vertical-align: middle;
 }
@@ -36,7 +36,7 @@ ul.menu li {                  /* The list items */
     vertical-align: middle;
     color: white;
 }
-.circle {
+.circle {                     /* The profile picture border */
   border-color: white;
   border-radius: 50%;
   border: solid 1px;
@@ -72,19 +72,28 @@ a:active {
   background: ;
   color: white;
 }
+.search-box:hover,
+.search-box:focus,
+.search-box:active {
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
 .search-box {
   position: absolute;
   left: 12%;
   top: -32px;
   vertical-align: inherit;
   transform: translate(0%, 100%);
-  background: darkslategrey;
+  background: #061ea7;
   height: 25px;
   border-radius: 25px;
   padding: 10px;
+  animation-name: hover;
+  animation-duration: 1ms;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
 }
 .search-btn {
-  color: #212121;
   float: right;
   width: 25px;
   height: 25px;
@@ -92,7 +101,7 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: darkslategray;
+  background: #061ea7;
   transition: 0.4s;
 }
 .search-txt {
