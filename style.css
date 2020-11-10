@@ -116,3 +116,15 @@ a:active {
   line-height: 25px;
   width: 0px;
 }
+.columnright {
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  float: right;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.columns:after {
+  content: "";
+  display: table;
+  clear: both;
